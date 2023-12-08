@@ -15,6 +15,9 @@
 	"icon": "assets/slimecrafter/icon.png",
 	"environment": "*",
 	"entrypoints": {
+		"fabric-datagen": [
+			"com.slimecrafter.datagen.SlimecrafterDataGenerator"
+		],
 		"main": [
 			"com.slimecrafter.Main"
 		],
