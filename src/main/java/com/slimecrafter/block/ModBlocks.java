@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.ExperienceDroppingBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -14,13 +15,17 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.intprovider.IntProvider;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 public class ModBlocks {
 
     public static final Block SLIMIUM_ORE_BLOCK = registerBlock("slimium_ore",
-            new Block(FabricBlockSettings.copyOf(Blocks.GOLD_ORE).sounds(BlockSoundGroup.SLIME)));
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.GOLD_ORE).sounds(BlockSoundGroup.SLIME),
+                    UniformIntProvider.create(1,3)));
     public static final Block DEEPSLATE_SLIMIUM_ORE_BLOCK = registerBlock("deepslate_slimium_ore",
-            new Block(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_GOLD_ORE).sounds(BlockSoundGroup.SLIME)));
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_GOLD_ORE).sounds(BlockSoundGroup.SLIME),
+                    UniformIntProvider.create(1,3)));
     public static final Block SLIMIUM_BLOCK = registerBlock("slimium_block",
             new Block(FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK)));
 
