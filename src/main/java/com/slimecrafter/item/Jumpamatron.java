@@ -19,7 +19,8 @@ public class Jumpamatron extends Item {
         BlockPos posClicked = context.getBlockPos();
         PlayerEntity playerEntity = context.getPlayer();
         assert playerEntity != null;
-        double ratio = 1/calcDistance(playerEntity.getPos(), new Vec3d(posClicked.getX(), posClicked.getY(), posClicked.getZ()));
+        double ratio = 2/calcDistance(playerEntity.getPos(), new Vec3d(posClicked.getX(), posClicked.getY(), posClicked.getZ()));
+        ratio = Math.min(ratio, 1);
         playerEntity.setVelocity(playerEntity.getVelocity().
                 add(playerEntity.getRotationVec(0).
                         multiply(new Vec3d(ratio*-0.7, ratio*-1, ratio*-0.7))));
