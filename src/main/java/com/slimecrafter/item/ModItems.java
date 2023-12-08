@@ -14,6 +14,7 @@ public class ModItems {
     // ITEMS
     public static final Item SLIMIUM_INGOT = registerItem("slimium_ingot", new SlimiumIngot(new FabricItemSettings()));
     public static final Item RAW_SLIMIUM = registerItem("raw_slimium", new Item(new FabricItemSettings()));
+    public static final Item JUMPAMATRON = registerItem("jumpamatron", new Jumpamatron(new FabricItemSettings()));
 
 
     private static Item registerItem(String name, Item item){
@@ -25,9 +26,14 @@ public class ModItems {
         entries.add(RAW_SLIMIUM);
     }
 
+    private static void addItemsToTools(FabricItemGroupEntries entries){
+        entries.add(JUMPAMATRON);
+    }
+
     public static void registerModItems(){
         Main.LOGGER.info("registering mod items for " + Main.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredients);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(ModItems::addItemsToTools);
     }
 }

@@ -21,6 +21,12 @@ public class ModItemGroups {
                         entries.add(ModBlocks.SLIMIUM_BLOCK);
                     }).build());
 
+    public static final ItemGroup MOD_TOOLS = Registry.register(Registries.ITEM_GROUP, new Identifier(Main.MOD_ID, "mod_tools"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.mod_tools"))
+                    .icon(() -> new ItemStack(ModItems.JUMPAMATRON)).entries((displayContext, entries) -> {
+                        entries.add(ModItems.JUMPAMATRON);
+                    }).build());
+
     public static void registerItemGroups(){
         Main.LOGGER.info("Registering ItemGroups for " + Main.MOD_ID);
     }

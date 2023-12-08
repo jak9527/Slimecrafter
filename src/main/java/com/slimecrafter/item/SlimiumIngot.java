@@ -15,24 +15,7 @@ public class SlimiumIngot extends Item {
         super(settings);
     }
 
-    @Override
-    public ActionResult useOnBlock(ItemUsageContext context) {
-        BlockPos posClicked = context.getBlockPos();
-        PlayerEntity playerEntity = context.getPlayer();
-        assert playerEntity != null;
-        if(posClicked.getY() < playerEntity.getY()){
-            playerEntity.setVelocity(playerEntity.getVelocity().add(playerEntity.getRotationVec(0).multiply(new Vec3d(-0.5, -0.7, -0.5))));
-            context.getWorld().playSound(playerEntity, posClicked, SoundEvents.ENTITY_SLIME_JUMP, SoundCategory.PLAYERS, 1.0f, 1.0f);
-            playerEntity.getItemCooldownManager().set(this, 20);
-        }
 
-        if(!context.getWorld().isClient){
-
-
-        }
-
-        return ActionResult.SUCCESS;
-    }
 
 //    @Override
 //    public TypedActionResult<ItemStack> use(World world, PlayerEntity playerEntity, Hand hand){
