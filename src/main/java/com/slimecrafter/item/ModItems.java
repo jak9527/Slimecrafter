@@ -14,7 +14,8 @@ public class ModItems {
     // ITEMS
     public static final Item SLIMIUM_INGOT = registerItem("slimium_ingot", new SlimiumIngot(new FabricItemSettings()));
     public static final Item RAW_SLIMIUM = registerItem("raw_slimium", new Item(new FabricItemSettings()));
-    public static final Item JUMPAMATRON = registerItem("jumpamatron", new Jumpamatron(new FabricItemSettings()));
+    public static final Item JUMPAMATRON = registerItem("jumpamatron",
+            new Jumpamatron(new FabricItemSettings().maxDamage(1024)));
 
 
     private static Item registerItem(String name, Item item){

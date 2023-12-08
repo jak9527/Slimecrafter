@@ -23,10 +23,13 @@ public class Jumpamatron extends Item {
         ratio = Math.min(ratio, 1);
         playerEntity.setVelocity(playerEntity.getVelocity().
                 add(playerEntity.getRotationVec(0).
-                        multiply(new Vec3d(ratio*-0.7, ratio*-1, ratio*-0.7))));
+                        multiply(new Vec3d(ratio*-1.2, ratio*-1, ratio*-1.2))));
         playerEntity.playSound(SoundEvents.BLOCK_PISTON_EXTEND, SoundCategory.PLAYERS, 1.0f, 1.0f);
         context.getWorld().playSound(playerEntity, posClicked, SoundEvents.ENTITY_SLIME_JUMP, SoundCategory.PLAYERS, 1.0f, 1.0f);
         playerEntity.getItemCooldownManager().set(this, 20);
+
+        context.getStack().damage(1, context.getPlayer(),
+                playerEntity1 -> playerEntity1.sendToolBreakStatus(playerEntity1.getActiveHand()));
 
         return ActionResult.SUCCESS;
     }
