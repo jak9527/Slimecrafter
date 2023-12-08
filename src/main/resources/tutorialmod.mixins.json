@@ -3,7 +3,7 @@
 	"package": "com.tutorialmod.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"ExampleMixin"
+      "TutorialMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

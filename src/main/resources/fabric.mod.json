@@ -2,10 +2,10 @@
 	"schemaVersion": 1,
 	"id": "tutorialmod",
 	"version": "${version}",
-	"name": "Example mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Tutorial Mod",
+	"description": "Tutorial Description :)",
 	"authors": [
-		"Me!"
+		"PureFyre"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
@@ -16,7 +16,7 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-          "com.tutorialmod.ExampleMod"
+			"com.tutorialmod.Main"
 		],
 		"client": [
 			"com.example.ExampleModClient"
