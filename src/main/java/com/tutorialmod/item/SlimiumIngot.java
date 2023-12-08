@@ -19,6 +19,7 @@ public class SlimiumIngot extends Item {
     public TypedActionResult<ItemStack> use(World world, PlayerEntity playerEntity, Hand hand){
         playerEntity.setVelocity(playerEntity.getVelocity().add(0.0, 0.7, 0.0));
         playerEntity.playSound(SoundEvents.ENTITY_SLIME_JUMP, 1.0f, 1.0f);
+        playerEntity.getItemCooldownManager().set(this, 20);
         return TypedActionResult.success(playerEntity.getStackInHand(hand));
     }
 }

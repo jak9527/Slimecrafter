@@ -13,7 +13,7 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
     // ITEMS
-    public static final Item SLIMIUM_INGOT = registerItem("slimium_ingot", new Item(new FabricItemSettings()));
+    public static final Item SLIMIUM_INGOT = registerItem("slimium_ingot", new SlimiumIngot(new FabricItemSettings()));
     public static final Item RAW_SLIMIUM = registerItem("raw_slimium", new Item(new FabricItemSettings()));
 
 
