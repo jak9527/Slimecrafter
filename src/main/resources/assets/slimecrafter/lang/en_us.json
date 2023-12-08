@@ -5,7 +5,18 @@
 
   "block.slimecrafter.slimium_ore": "Slimium Ore",
   "block.slimecrafter.deepslate_slimium_ore": "Deepslate Slimium Ore",
+
   "block.slimecrafter.slimium_block": "Block of Slimium",
+  "block.slimecrafter.slimium_stairs": "Slimium Stairs",
+  "block.slimecrafter.slimium_slab": "Slimium Slab",
+  "block.slimecrafter.slimium_button": "Slimium Button",
+  "block.slimecrafter.slimium_pressure_plate": "Slimium Pressure Plate",
+  "block.slimecrafter.slimium_fence": "Slimium Fence",
+  "block.slimecrafter.slimium_fence_gate": "Slimium Fence Gate",
+  "block.slimecrafter.slimium_wall": "Slimium Wall",
+  "block.slimecrafter.slimium_door": "Slimium Door",
+  "block.slimecrafter.slimium_trap_door": "Slimium Trap Door",
+
 
   "itemgroup.mod_ingredients": "Ingredients",
   "itemgroup.mod_tools": "Tools"
