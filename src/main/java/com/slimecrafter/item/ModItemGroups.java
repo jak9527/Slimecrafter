@@ -1,6 +1,6 @@
-package com.tutorialmod.item;
+package com.slimecrafter.item;
 
-import com.tutorialmod.Main;
+import com.slimecrafter.Main;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;

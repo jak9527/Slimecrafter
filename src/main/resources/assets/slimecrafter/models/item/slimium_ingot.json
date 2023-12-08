@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "tutorialmod:item/raw_slimium"
+    "layer0": "slimecrafter:item/slimium_ingot"
   }
 }

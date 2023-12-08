@@ -1,9 +1,9 @@
 {
 	"schemaVersion": 1,
-	"id": "tutorialmod",
+	"id": "slimecrafter",
 	"version": "${version}",
-	"name": "Tutorial Mod",
-	"description": "Tutorial Description :)",
+	"name": "Slime Crafter",
+	"description": "Inspired by Slime Rancher and Resource Chickens. Capture resource slimes, breed them, and generate resources",
 	"authors": [
 		"PureFyre"
 	],
@@ -12,20 +12,20 @@
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/tutorialmod/icon.png",
+	"icon": "assets/slimecrafter/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.tutorialmod.Main"
+			"com.slimecrafter.Main"
 		],
 		"client": [
 			"com.example.ExampleModClient"
 		]
 	},
 	"mixins": [
-		"tutorialmod.mixins.json",
+		"slimecrafter.mixins.json",
 		{
-			"config": "tutorialmod.client.mixins.json",
+			"config": "slimecrafter.client.mixins.json",
 			"environment": "client"
 		}
 	],

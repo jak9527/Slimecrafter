@@ -1,4 +1,4 @@
-package com.tutorialmod.mixin.client;
+package com.slimecrafter.mixin.client;
 
 import net.minecraft.client.MinecraftClient;
 import org.spongepowered.asm.mixin.Mixin;

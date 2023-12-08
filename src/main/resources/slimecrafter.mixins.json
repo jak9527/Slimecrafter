@@ -1,9 +1,9 @@
 {
 	"required": true,
-	"package": "com.tutorialmod.mixin.client",
+	"package": "com.slimecrafter.mixin",
 	"compatibilityLevel": "JAVA_17",
-	"client": [
-		"ExampleClientMixin"
+	"mixins": [
+		"slimecrafterMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
