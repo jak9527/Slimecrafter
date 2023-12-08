@@ -18,9 +18,9 @@ public class Main implements ModInitializer {
 	// It is considered best practice to use your mod id as the logger's name.
 	// That way, it's clear which mod wrote info, warnings, and errors.
     public static final Logger LOGGER = LoggerFactory.getLogger("modid");
+	public static final String MOD_ID = "tutorialmod";
 
-	// ITEMS
-	public static final Item SLIMIUM_INGOT = new Item(new FabricItemSettings());
+
 
 	@Override
 	public void onInitialize() {
@@ -30,10 +30,5 @@ public class Main implements ModInitializer {
 
 		LOGGER.info("Hello Fabric world!");
 
-		Registry.register(Registries.ITEM, new Identifier("tutorialmod", "slimium_ingot"), SLIMIUM_INGOT);
-
-		ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(content -> {
-			content.addAfter(Items.GOLD_INGOT, SLIMIUM_INGOT);
-		});
 	}
 }
