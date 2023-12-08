@@ -1,6 +1,7 @@
 package com.slimecrafter.item;
 
 import com.slimecrafter.Main;
+import com.slimecrafter.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -15,6 +16,8 @@ public class ModItemGroups {
                     .icon(() -> new ItemStack(ModItems.SLIMIUM_INGOT)).entries((displayContext, entries) -> {
                         entries.add(ModItems.RAW_SLIMIUM);
                         entries.add(ModItems.SLIMIUM_INGOT);
+                        entries.add(ModBlocks.SLIMIUM_ORE_BLOCK);
+                        entries.add(ModBlocks.DEEPSLATE_SLIMIUM_ORE_BLOCK);
                     }).build());
 
     public static void registerItemGroups(){

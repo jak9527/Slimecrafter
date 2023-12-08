@@ -1,5 +1,6 @@
 package com.slimecrafter;
 
+import com.slimecrafter.block.ModBlocks;
 import com.slimecrafter.item.ModItemGroups;
 import com.slimecrafter.item.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -25,6 +26,8 @@ public class Main implements ModInitializer {
 		LOGGER.info("Hello Fabric world!");
 		ModItems.registerModItems();
 		ModItemGroups.registerItemGroups();
+
+		ModBlocks.registerModBlocks();
 
 	}
 }

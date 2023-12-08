@@ -2,5 +2,8 @@
   "item.slimecrafter.slimium_ingot": "Slimium Ingot",
   "item.slimecrafter.raw_slimium": "Raw Slimium",
 
+  "block.slimecrafter.slimium_ore": "Slimium Ore",
+  "block.slimecrafter.deepslate_slimium_ore": "Deepslate Slimium Ore",
+
   "itemgroup.mod_ingredients": "Ingredients"
 }
