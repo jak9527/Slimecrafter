@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.4,
+  "group": "slimium",
+  "ingredient": {
+    "item": "slimecrafter:raw_slimium"
+  },
+  "result": "slimecrafter:slimium_ingot"
+}

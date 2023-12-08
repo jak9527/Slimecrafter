@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_slimium_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "slimecrafter:slimium_ore"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:slimium_ingot_from_blasting_slimium_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_slimium_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:slimium_ingot_from_blasting_slimium_ore"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,9 @@
+// 1.20.2	2023-12-08T18:03:34.6708875	Slime Crafter/Tags for minecraft:block
+661a8720edf1257a170b25b33761bfbb9b2be30a data\minecraft\tags\blocks\needs_iron_tool.json
+8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\mineable\axe.json
+8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\mineable\hoe.json
+8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\mineable\shovel.json
+8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\needs_diamond_tool.json
+8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\fabric\tags\blocks\needs_tool_level_4.json
+9568ae177ed5043e46fff28265511bbca1abda3a data\minecraft\tags\blocks\needs_stone_tool.json
+9b66633a816b2faab14768a788d7ce257fad9b06 data\minecraft\tags\blocks\mineable\pickaxe.json
