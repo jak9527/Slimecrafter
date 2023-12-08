@@ -18,6 +18,7 @@ public class ModItemGroups {
                         entries.add(ModItems.SLIMIUM_INGOT);
                         entries.add(ModBlocks.SLIMIUM_ORE_BLOCK);
                         entries.add(ModBlocks.DEEPSLATE_SLIMIUM_ORE_BLOCK);
+                        entries.add(ModBlocks.SLIMIUM_BLOCK);
                     }).build());
 
     public static void registerItemGroups(){

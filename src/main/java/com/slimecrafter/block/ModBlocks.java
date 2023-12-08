@@ -21,6 +21,8 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.GOLD_ORE).sounds(BlockSoundGroup.SLIME)));
     public static final Block DEEPSLATE_SLIMIUM_ORE_BLOCK = registerBlock("deepslate_slimium_ore",
             new Block(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_GOLD_ORE).sounds(BlockSoundGroup.SLIME)));
+    public static final Block SLIMIUM_BLOCK = registerBlock("slimium_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK)));
 
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);
