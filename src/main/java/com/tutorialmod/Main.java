@@ -1,5 +1,6 @@
 package com.tutorialmod;
 
+import com.tutorialmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -29,6 +30,7 @@ public class Main implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Hello Fabric world!");
+		ModItems.registerModItems();
 
 	}
 }

@@ -14,6 +14,7 @@ import net.minecraft.util.Identifier;
 public class ModItems {
     // ITEMS
     public static final Item SLIMIUM_INGOT = registerItem("slimium_ingot", new Item(new FabricItemSettings()));
+    public static final Item RAW_SLIMIUM = registerItem("raw_slimium", new Item(new FabricItemSettings()));
 
 
     private static Item registerItem(String name, Item item){
@@ -22,6 +23,7 @@ public class ModItems {
 
     private static void addItemsToIngredients(FabricItemGroupEntries entries){
         entries.add(SLIMIUM_INGOT);
+        entries.add(RAW_SLIMIUM);
     }
 
     public static void registerModItems(){
