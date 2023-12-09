@@ -4,6 +4,7 @@ import com.slimecrafter.Main;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.item.ArmorItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
@@ -16,7 +17,23 @@ public class ModItems {
     public static final Item REINFORCED_SLIMIUM_INGOT = registerItem("reinforced_slimium_ingot", new Item(new FabricItemSettings()));
     public static final Item RAW_SLIMIUM = registerItem("raw_slimium", new Item(new FabricItemSettings()));
     public static final Item JUMPAMATRON = registerItem("jumpamatron",
-            new Jumpamatron(new FabricItemSettings().maxDamage(1024)));
+            new Jumpamatron(new FabricItemSettings().maxDamage(1024).maxCount(1)));
+    public static final Item SLIMIUM_HELMET = registerItem("slimium_helmet",
+            new ArmorItem(ModArmorMaterials.SLIMIUM, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item SLIMIUM_CHESTPLATE = registerItem("slimium_chestplate",
+            new ArmorItem(ModArmorMaterials.SLIMIUM, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item SLIMIUM_LEGGINGS = registerItem("slimium_leggings",
+            new ArmorItem(ModArmorMaterials.SLIMIUM, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item SLIMIUM_BOOTS = registerItem("slimium_boots",
+            new ArmorItem(ModArmorMaterials.SLIMIUM, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+    public static final Item REINFORCED_SLIMIUM_HELMET = registerItem("reinforced_slimium_helmet",
+            new ArmorItem(ModArmorMaterials.REINFORCED_SLIMIUM, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item REINFORCED_SLIMIUM_CHESTPLATE = registerItem("reinforced_slimium_chestplate",
+            new ArmorItem(ModArmorMaterials.REINFORCED_SLIMIUM, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item REINFORCED_SLIMIUM_LEGGINGS = registerItem("reinforced_slimium_leggings",
+            new ArmorItem(ModArmorMaterials.REINFORCED_SLIMIUM, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item REINFORCED_SLIMIUM_BOOTS = registerItem("reinforced_slimium_boots",
+            new ArmorItem(ModArmorMaterials.REINFORCED_SLIMIUM, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
 
     private static Item registerItem(String name, Item item){

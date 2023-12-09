@@ -10,11 +10,11 @@ import net.minecraft.sound.SoundEvents;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
-    SLIMIUM("slimium", 25, new int[] {2, 5, 4, 2}, 19,
+    SLIMIUM("slimium", 25, new int[] {2, 5, 5, 2}, 19,
             SoundEvents.ENTITY_SLIME_SQUISH, 0f, 0.3f,
             () -> Ingredient.ofItems(ModItems.SLIMIUM_INGOT)),
-    REINFORCED_SLIMIUM("reinforced_slimium", 30, new int[] {3, 6, 6, 3}, 24,
-            SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 1f, 0.8f,
+    REINFORCED_SLIMIUM("reinforced_slimium", 36, new int[] {3, 6, 8, 3}, 24,
+            SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 0.5f, 0.3f,
             () -> Ingredient.ofItems(ModItems.REINFORCED_SLIMIUM_INGOT));
     ;
 

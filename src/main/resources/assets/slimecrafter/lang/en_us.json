@@ -1,7 +1,19 @@
 {
   "item.slimecrafter.slimium_ingot": "Slimium Ingot",
   "item.slimecrafter.raw_slimium": "Raw Slimium",
+  "item.slimecrafter.reinforced_slimium_ingot": "Reinforced Slimium Ingot",
+
   "item.slimecrafter.jumpamatron": "Jumpamatron",
+
+  "item.slimecrafter.slimium_helmet" : "Slimium Helmet",
+  "item.slimecrafter.slimium_chestplate": "Slimium Chestplate",
+  "item.slimecrafter.slimium_leggings": "Slimium Leggings",
+  "item.slimecrafter.slimium_boots": "Slimium Boots",
+
+  "item.slimecrafter.reinforced_slimium_helmet": "Reinforced Slimium Helmet",
+  "item.slimecrafter.reinforced_slimium_chestplate": "Reinforced Slimium Chestplate",
+  "item.slimecrafter.reinforced_slimium_leggings": "Reinforced Slimium Leggings",
+  "item.slimecrafter.reinforced_slimium_boots": "Reinforced Slimium Boots",
 
   "block.slimecrafter.slimium_ore": "Slimium Ore",
   "block.slimecrafter.deepslate_slimium_ore": "Deepslate Slimium Ore",
@@ -19,5 +31,6 @@
 
 
   "itemgroup.mod_ingredients": "Ingredients",
-  "itemgroup.mod_tools": "Tools"
+  "itemgroup.mod_tools": "Tools",
+  "itemgroup.mod_blocks": "Blocks"
 }

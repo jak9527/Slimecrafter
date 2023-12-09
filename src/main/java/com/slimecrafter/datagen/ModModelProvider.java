@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
+import net.minecraft.item.ArmorItem;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -38,5 +39,14 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.REINFORCED_SLIMIUM_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.SLIMIUM_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.JUMPAMATRON, Models.GENERATED);
+
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.SLIMIUM_HELMET);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.SLIMIUM_CHESTPLATE);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.SLIMIUM_LEGGINGS);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.SLIMIUM_BOOTS);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.REINFORCED_SLIMIUM_HELMET);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.REINFORCED_SLIMIUM_CHESTPLATE);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.REINFORCED_SLIMIUM_LEGGINGS);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.REINFORCED_SLIMIUM_BOOTS);
     }
 }

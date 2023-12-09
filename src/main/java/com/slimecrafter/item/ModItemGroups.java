@@ -26,6 +26,16 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.mod_tools"))
                     .icon(() -> new ItemStack(ModItems.JUMPAMATRON)).entries((displayContext, entries) -> {
                         entries.add(ModItems.JUMPAMATRON);
+
+                        entries.add(ModItems.SLIMIUM_HELMET);
+                        entries.add(ModItems.SLIMIUM_CHESTPLATE);
+                        entries.add(ModItems.SLIMIUM_LEGGINGS);
+                        entries.add(ModItems.SLIMIUM_BOOTS);
+
+                        entries.add(ModItems.REINFORCED_SLIMIUM_HELMET);
+                        entries.add(ModItems.REINFORCED_SLIMIUM_CHESTPLATE);
+                        entries.add(ModItems.REINFORCED_SLIMIUM_LEGGINGS);
+                        entries.add(ModItems.REINFORCED_SLIMIUM_BOOTS);
                     }).build());
 
     public static final ItemGroup MOD_BLOCKS = Registry.register(Registries.ITEM_GROUP, new Identifier(Main.MOD_ID, "mod_blocks"),
