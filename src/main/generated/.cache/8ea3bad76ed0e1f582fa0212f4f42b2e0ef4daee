@@ -1,12 +1,12 @@
-// 1.20.2	2023-12-08T19:31:09.4647766	Slime Crafter/Tags for minecraft:block
+// 1.20.2	2023-12-09T09:51:33.9545893	Slime Crafter/Tags for minecraft:block
 3514506446dc1ea972b4d8cada4203b68cea75c4 data\minecraft\tags\blocks\walls.json
 661a8720edf1257a170b25b33761bfbb9b2be30a data\minecraft\tags\blocks\needs_iron_tool.json
 192567a451caea740393c47da97a2a61546c9d85 data\minecraft\tags\blocks\fence_gates.json
-8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\mineable\axe.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\mineable\hoe.json
+8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\mineable\axe.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\mineable\shovel.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\needs_diamond_tool.json
-8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\fabric\tags\blocks\needs_tool_level_4.json
 4d64620a7ba60956fa4f3094232e55f36ba7ab9f data\minecraft\tags\blocks\fences.json
-9b66633a816b2faab14768a788d7ce257fad9b06 data\minecraft\tags\blocks\mineable\pickaxe.json
-9568ae177ed5043e46fff28265511bbca1abda3a data\minecraft\tags\blocks\needs_stone_tool.json
+8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\fabric\tags\blocks\needs_tool_level_4.json
+c72bf2377e1295c8f72cd56ef8d9c1a708c100e6 data\minecraft\tags\blocks\mineable\pickaxe.json
+23e4478119f58cefdeeb85dfabfdedb6770162e8 data\minecraft\tags\blocks\needs_stone_tool.json

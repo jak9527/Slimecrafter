@@ -22,7 +22,16 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider{
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.SLIMIUM_BLOCK)
                 .add(ModBlocks.SLIMIUM_ORE_BLOCK)
-                .add(ModBlocks.DEEPSLATE_SLIMIUM_ORE_BLOCK);
+                .add(ModBlocks.DEEPSLATE_SLIMIUM_ORE_BLOCK)
+                .add(ModBlocks.SLIMIUM_WALL)
+                .add(ModBlocks.SLIMIUM_FENCE_GATE)
+                .add(ModBlocks.SLIMIUM_FENCE)
+                .add(ModBlocks.SLIMIUM_BUTTON)
+                .add(ModBlocks.SLIMIUM_DOOR)
+                .add(ModBlocks.SLIMIUM_PRESSURE_PLATE)
+                .add(ModBlocks.SLIMIUM_SLAB)
+                .add(ModBlocks.SLIMIUM_STAIRS)
+                .add(ModBlocks.SLIMIUM_TRAP_DOOR);
 
         //Axe Mineable
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE);
@@ -35,7 +44,16 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider{
 
         //Mining Levels
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
-                .add(ModBlocks.SLIMIUM_BLOCK);
+                .add(ModBlocks.SLIMIUM_BLOCK)
+                .add(ModBlocks.SLIMIUM_WALL)
+                .add(ModBlocks.SLIMIUM_FENCE_GATE)
+                .add(ModBlocks.SLIMIUM_FENCE)
+                .add(ModBlocks.SLIMIUM_BUTTON)
+                .add(ModBlocks.SLIMIUM_DOOR)
+                .add(ModBlocks.SLIMIUM_PRESSURE_PLATE)
+                .add(ModBlocks.SLIMIUM_SLAB)
+                .add(ModBlocks.SLIMIUM_STAIRS)
+                .add(ModBlocks.SLIMIUM_TRAP_DOOR);;
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.SLIMIUM_ORE_BLOCK)
                 .add(ModBlocks.DEEPSLATE_SLIMIUM_ORE_BLOCK);

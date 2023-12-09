@@ -3,6 +3,15 @@
   "values": [
     "slimecrafter:slimium_block",
     "slimecrafter:slimium_ore",
-    "slimecrafter:deepslate_slimium_ore"
+    "slimecrafter:deepslate_slimium_ore",
+    "slimecrafter:slimium_wall",
+    "slimecrafter:slimium_fence_gate",
+    "slimecrafter:slimium_fence",
+    "slimecrafter:slimium_button",
+    "slimecrafter:slimium_door",
+    "slimecrafter:slimium_pressure_plate",
+    "slimecrafter:slimium_slab",
+    "slimecrafter:slimium_stairs",
+    "slimecrafter:slimium_trap_door"
   ]
 }
