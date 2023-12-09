@@ -45,6 +45,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.SLIMIUM_INGOT), conditionsFromItem(ModItems.SLIMIUM_INGOT))
                 .offerTo(exporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.REINFORCED_SLIMIUM_INGOT, 8)
+                .pattern("SSS")
+                .pattern("SNS")
+                .pattern("SSS")
+                .input('S', ModItems.SLIMIUM_INGOT)
+                .input('N', Items.NETHERITE_INGOT)
+                .criterion(hasItem(ModItems.SLIMIUM_INGOT), conditionsFromItem(ModItems.SLIMIUM_INGOT))
+                .criterion(hasItem(Items.NETHERITE_INGOT), conditionsFromItem(Items.NETHERITE_INGOT))
+                .offerTo(exporter);
+
         createStairsRecipe(ModBlocks.SLIMIUM_STAIRS, Ingredient.ofItems(ModItems.SLIMIUM_INGOT))
                 .criterion(hasItem(ModItems.SLIMIUM_INGOT), conditionsFromItem(ModItems.SLIMIUM_INGOT))
                 .offerTo(exporter);

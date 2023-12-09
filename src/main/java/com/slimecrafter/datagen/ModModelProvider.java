@@ -35,6 +35,7 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.RAW_SLIMIUM, Models.GENERATED);
+        itemModelGenerator.register(ModItems.REINFORCED_SLIMIUM_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.SLIMIUM_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.JUMPAMATRON, Models.GENERATED);
     }

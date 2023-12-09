@@ -16,6 +16,7 @@ public class ModItemGroups {
                     .icon(() -> new ItemStack(ModItems.SLIMIUM_INGOT)).entries((displayContext, entries) -> {
                         entries.add(ModItems.RAW_SLIMIUM);
                         entries.add(ModItems.SLIMIUM_INGOT);
+                        entries.add(ModItems.REINFORCED_SLIMIUM_INGOT);
                         entries.add(ModBlocks.SLIMIUM_ORE_BLOCK);
                         entries.add(ModBlocks.DEEPSLATE_SLIMIUM_ORE_BLOCK);
                         entries.add(ModBlocks.SLIMIUM_BLOCK);
