@@ -27,6 +27,20 @@ public class ModItemGroups {
                         entries.add(ModItems.JUMPAMATRON);
                     }).build());
 
+    public static final ItemGroup MOD_BLOCKS = Registry.register(Registries.ITEM_GROUP, new Identifier(Main.MOD_ID, "mod_blocks"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.mod_blocks"))
+                    .icon(() -> new ItemStack(ModBlocks.SLIMIUM_BLOCK)).entries((displayContext, entries) -> {
+                        entries.add(ModBlocks.SLIMIUM_BLOCK);
+                        entries.add(ModBlocks.SLIMIUM_SLAB);
+                        entries.add(ModBlocks.SLIMIUM_STAIRS);
+                        entries.add(ModBlocks.SLIMIUM_TRAP_DOOR);
+                        entries.add(ModBlocks.SLIMIUM_BUTTON);
+                        entries.add(ModBlocks.SLIMIUM_FENCE);
+                        entries.add(ModBlocks.SLIMIUM_FENCE_GATE);
+                        entries.add(ModBlocks.SLIMIUM_DOOR);
+                        entries.add(ModBlocks.SLIMIUM_WALL);
+                    }).build());
+
     public static void registerItemGroups(){
         Main.LOGGER.info("Registering ItemGroups for " + Main.MOD_ID);
     }

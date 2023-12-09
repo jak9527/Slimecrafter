@@ -9,6 +9,7 @@ import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 
 import java.util.List;
@@ -43,5 +44,27 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('T', Blocks.TRIPWIRE_HOOK)
                 .criterion(hasItem(ModItems.SLIMIUM_INGOT), conditionsFromItem(ModItems.SLIMIUM_INGOT))
                 .offerTo(exporter);
+
+        createStairsRecipe(ModBlocks.SLIMIUM_STAIRS, Ingredient.ofItems(ModItems.SLIMIUM_INGOT))
+                .criterion(hasItem(ModItems.SLIMIUM_INGOT), conditionsFromItem(ModItems.SLIMIUM_INGOT))
+                .offerTo(exporter);
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SLIMIUM_SLAB, Ingredient.ofItems(ModItems.SLIMIUM_INGOT))
+                .criterion(hasItem(ModItems.SLIMIUM_INGOT), conditionsFromItem(ModItems.SLIMIUM_INGOT))
+                .offerTo(exporter);;
+        offerShapelessRecipe(exporter, ModBlocks.SLIMIUM_BUTTON, ModItems.SLIMIUM_INGOT, "slimium", 1);
+        offerPressurePlateRecipe(exporter, ModBlocks.SLIMIUM_PRESSURE_PLATE, ModItems.SLIMIUM_INGOT);
+        createFenceRecipe(ModBlocks.SLIMIUM_FENCE, Ingredient.ofItems(ModItems.SLIMIUM_INGOT))
+                .criterion(hasItem(ModItems.SLIMIUM_INGOT), conditionsFromItem(ModItems.SLIMIUM_INGOT))
+                .offerTo(exporter);;
+        createFenceGateRecipe(ModBlocks.SLIMIUM_FENCE_GATE, Ingredient.ofItems(ModItems.SLIMIUM_INGOT))
+                .criterion(hasItem(ModItems.SLIMIUM_INGOT), conditionsFromItem(ModItems.SLIMIUM_INGOT))
+                .offerTo(exporter);;
+        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SLIMIUM_WALL, ModItems.SLIMIUM_INGOT);
+        createDoorRecipe(ModBlocks.SLIMIUM_DOOR, Ingredient.ofItems(ModItems.SLIMIUM_INGOT))
+                .criterion(hasItem(ModItems.SLIMIUM_INGOT), conditionsFromItem(ModItems.SLIMIUM_INGOT))
+                .offerTo(exporter);;
+        createTrapdoorRecipe(ModBlocks.SLIMIUM_TRAP_DOOR, Ingredient.ofItems(ModItems.SLIMIUM_INGOT))
+                .criterion(hasItem(ModItems.SLIMIUM_INGOT), conditionsFromItem(ModItems.SLIMIUM_INGOT))
+                .offerTo(exporter);;
     }
 }

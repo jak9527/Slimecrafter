@@ -17,7 +17,19 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_SLIMIUM_ORE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SLIMIUM_ORE_BLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SLIMIUM_BLOCK);
+        BlockStateModelGenerator.BlockTexturePool slimiumPool
+                = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SLIMIUM_BLOCK);
+
+        slimiumPool.stairs(ModBlocks.SLIMIUM_STAIRS);
+        slimiumPool.slab(ModBlocks.SLIMIUM_SLAB);
+        slimiumPool.button(ModBlocks.SLIMIUM_BUTTON);
+        slimiumPool.pressurePlate(ModBlocks.SLIMIUM_PRESSURE_PLATE);
+        slimiumPool.fence(ModBlocks.SLIMIUM_FENCE);
+        slimiumPool.fenceGate(ModBlocks.SLIMIUM_FENCE_GATE);
+        slimiumPool.wall(ModBlocks.SLIMIUM_WALL);
+
+        blockStateModelGenerator.registerDoor(ModBlocks.SLIMIUM_DOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.SLIMIUM_TRAP_DOOR);
     }
 
     @Override

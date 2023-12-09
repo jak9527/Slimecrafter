@@ -41,5 +41,15 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider{
                 .add(ModBlocks.DEEPSLATE_SLIMIUM_ORE_BLOCK);
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL);
         getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_level_4")));
+
+        //Block shapes
+        //Fences
+        getOrCreateTagBuilder(BlockTags.FENCES)
+            .add(ModBlocks.SLIMIUM_FENCE);
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES)
+                .add(ModBlocks.SLIMIUM_FENCE_GATE);
+        getOrCreateTagBuilder(BlockTags.WALLS)
+                .add(ModBlocks.SLIMIUM_WALL);
+
     }
 }

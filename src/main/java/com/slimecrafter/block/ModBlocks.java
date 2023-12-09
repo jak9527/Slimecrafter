@@ -43,9 +43,9 @@ public class ModBlocks {
     public static final Block SLIMIUM_WALL = registerBlock("slimium_wall",
             new WallBlock(FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK)));
     public static final Block SLIMIUM_DOOR = registerBlock("slimium_door",
-            new DoorBlock(FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK), BlockSetType.IRON));
+            new DoorBlock(FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK).nonOpaque(), BlockSetType.IRON));
     public static final Block SLIMIUM_TRAP_DOOR = registerBlock("slimium_trap_door",
-            new DoorBlock(FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK), BlockSetType.IRON));
+            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK).nonOpaque(), BlockSetType.IRON));
 
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);
