@@ -23,7 +23,7 @@ public class Jumpamatron extends Item {
         ratio = Math.min(ratio, 1);
         entity.setVelocity(entity.getVelocity()
                 .add(user.getRotationVec(0)
-                        .multiply(new Vec3d(ratio*-1.2, ratio*-1, ratio*-1.2))));
+                        .multiply(new Vec3d(ratio*5, ratio*1, ratio*5))));
         user.playSound(SoundEvents.BLOCK_PISTON_EXTEND, SoundCategory.PLAYERS, 1.0f, 1.0f);
         entity.playSound(SoundEvents.ENTITY_SLIME_JUMP, 1.0f, 1.0f);
         user.getItemCooldownManager().set(this, 20);
