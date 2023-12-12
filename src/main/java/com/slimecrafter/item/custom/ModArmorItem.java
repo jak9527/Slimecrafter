@@ -9,6 +9,7 @@ import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.state.property.Properties;
 import net.minecraft.text.Text;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
@@ -63,7 +64,14 @@ public class ModArmorItem extends ArmorItem {
     }
 
     private boolean bounceableBlock(Block block){
-        return block instanceof AirBlock || block instanceof PlantBlock;
+        boolean snowy = false;
+        if(block instanceof SnowBlock sb){
+            int layers = sb.getDefaultState().get(Properties.LAYERS);
+            if(layers < 4){
+                snowy = true;
+            }
+        }
+        return block instanceof AirBlock || block instanceof PlantBlock || snowy;
         // || block instanceof TallFlowerBlock || block instanceof SnowyBlock || block instanceof PlantBlock
     }
 
