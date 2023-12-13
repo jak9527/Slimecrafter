@@ -3,6 +3,7 @@ package com.slimecrafter;
 import com.slimecrafter.block.ModBlocks;
 import com.slimecrafter.item.ModItemGroups;
 import com.slimecrafter.item.ModItems;
+import com.slimecrafter.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -28,6 +29,9 @@ public class Main implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 
 		ModBlocks.registerModBlocks();
+
+		//Generation
+		ModWorldGeneration.generateModWorldGen();
 
 	}
 }
