@@ -54,12 +54,9 @@ public class ModArmorItem extends ArmorItem {
                     player.fallDistance = 0;
                 }
             }
-
-//            if(player.isOnGround()){
-//                player.fallDistance = 0;
-//            }
-
-            //add bounce
+        }
+        else if(hasMatchingArmor(ModArmorMaterials.REINFORCED_SLIMIUM, player)){
+            player.fallDistance = 0;
         }
     }
 

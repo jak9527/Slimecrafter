@@ -1,6 +1,7 @@
 package com.slimecrafter.datagen;
 
 import com.slimecrafter.block.ModBlocks;
+import com.slimecrafter.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryKeys;
@@ -18,6 +19,19 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider{
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup arg) {
+        //Ores
+        getOrCreateTagBuilder(ModTags.Blocks.ORE)
+                .add(ModBlocks.SLIMIUM_ORE_BLOCK)
+                .add(ModBlocks.DEEPSLATE_SLIMIUM_ORE_BLOCK)
+                .forceAddTag(BlockTags.COAL_ORES)
+                .forceAddTag(BlockTags.COPPER_ORES)
+                .forceAddTag(BlockTags.DIAMOND_ORES)
+                .forceAddTag(BlockTags.EMERALD_ORES)
+                .forceAddTag(BlockTags.GOLD_ORES)
+                .forceAddTag(BlockTags.IRON_ORES)
+                .forceAddTag(BlockTags.LAPIS_ORES)
+                .forceAddTag(BlockTags.REDSTONE_ORES);
+
         //Pickaxe Mineable
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.SLIMIUM_BLOCK)
