@@ -1,6 +1,7 @@
 package com.slimecrafter.block;
 
 import com.slimecrafter.Main;
+import com.slimecrafter.block.custom.Putrefier;
 import com.slimecrafter.item.ModItems;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -46,6 +47,12 @@ public class ModBlocks {
             new DoorBlock(FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK).nonOpaque(), BlockSetType.IRON));
     public static final Block SLIMIUM_TRAP_DOOR = registerBlock("slimium_trap_door",
             new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK).nonOpaque(), BlockSetType.IRON));
+
+
+    // Block Entities
+    public static final Block PUTREFIER = registerBlock("putrefier",
+            new Putrefier(FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK).nonOpaque()));
+
 
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);

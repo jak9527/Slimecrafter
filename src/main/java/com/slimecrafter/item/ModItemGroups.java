@@ -2,6 +2,7 @@ package com.slimecrafter.item;
 
 import com.slimecrafter.Main;
 import com.slimecrafter.block.ModBlocks;
+import com.slimecrafter.block.custom.Putrefier;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -50,6 +51,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.SLIMIUM_FENCE_GATE);
                         entries.add(ModBlocks.SLIMIUM_DOOR);
                         entries.add(ModBlocks.SLIMIUM_WALL);
+                        entries.add(ModBlocks.PUTREFIER);
                     }).build());
 
     public static void registerItemGroups(){

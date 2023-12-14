@@ -1,6 +1,7 @@
 package com.slimecrafter;
 
 import com.slimecrafter.block.ModBlocks;
+import com.slimecrafter.block.entity.ModBlockEntities;
 import com.slimecrafter.item.ModItemGroups;
 import com.slimecrafter.item.ModItems;
 import com.slimecrafter.world.gen.ModWorldGeneration;
@@ -29,6 +30,7 @@ public class Main implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 
 		ModBlocks.registerModBlocks();
+		ModBlockEntities.registerBlocks();
 
 		//Generation
 		ModWorldGeneration.generateModWorldGen();
