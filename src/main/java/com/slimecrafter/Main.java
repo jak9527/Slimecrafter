@@ -4,6 +4,7 @@ import com.slimecrafter.block.ModBlocks;
 import com.slimecrafter.block.entity.ModBlockEntities;
 import com.slimecrafter.item.ModItemGroups;
 import com.slimecrafter.item.ModItems;
+import com.slimecrafter.screen.ModScreenHandlers;
 import com.slimecrafter.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
@@ -31,7 +32,7 @@ public class Main implements ModInitializer {
 
 		ModBlocks.registerModBlocks();
 		ModBlockEntities.registerBlocks();
-
+		ModScreenHandlers.RegisterScreenHandlers();
 
 		//Generation
 		ModWorldGeneration.generateModWorldGen();

@@ -26,8 +26,8 @@ public class PutrefierScreenHandler extends ScreenHandler {
 
 
 
-    public PutrefierScreenHandler(int syncId, PlayerInventory playerInventory, BlockEntity blockEntity, ArrayPropertyDelegate arrayPropertyDelegate) {
-        super( , syncId);
+    public PutrefierScreenHandler(int syncId, PlayerInventory playerInventory, BlockEntity blockEntity, PropertyDelegate arrayPropertyDelegate) {
+        super(ModScreenHandlers.PUTREFIER_SCREEN_HANDLER, syncId);
         checkSize(((Inventory) blockEntity), 3);
         this.inventory = ((Inventory) blockEntity);
         playerInventory.onOpen(playerInventory.player);

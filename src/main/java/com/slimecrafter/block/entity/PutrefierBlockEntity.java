@@ -2,6 +2,7 @@ package com.slimecrafter.block.entity;
 
 import com.slimecrafter.block.custom.Putrefier;
 import com.slimecrafter.item.ModItems;
+import com.slimecrafter.screen.PutrefierScreenHandler;
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
@@ -97,8 +98,7 @@ public class PutrefierBlockEntity extends BlockEntity implements ExtendedScreenH
     @Nullable
     @Override
     public ScreenHandler createMenu(int syncId, PlayerInventory playerInventory, PlayerEntity player) {
-        return null;
-        //TODO this
+        return new PutrefierScreenHandler(syncId, playerInventory, this, this.propertyDelegate);
     }
 
     public void tick(World world, BlockPos pos, BlockState state) {

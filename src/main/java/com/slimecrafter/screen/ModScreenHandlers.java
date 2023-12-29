@@ -12,7 +12,7 @@ public class ModScreenHandlers {
             Registry.register(Registries.SCREEN_HANDLER, new Identifier(Main.MOD_ID, "putrefier"),
                     new ExtendedScreenHandlerType<>(PutrefierScreenHandler::new));
 
-    public static void RegisterScreenHandlers() {
+    public static void registerScreenHandlers() {
         Main.LOGGER.info("Registering Screen Handlers for " + Main.MOD_ID);
     }
 }
