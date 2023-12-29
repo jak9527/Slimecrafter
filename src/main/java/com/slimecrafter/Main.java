@@ -32,6 +32,7 @@ public class Main implements ModInitializer {
 		ModBlocks.registerModBlocks();
 		ModBlockEntities.registerBlocks();
 
+
 		//Generation
 		ModWorldGeneration.generateModWorldGen();
 
