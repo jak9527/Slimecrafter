@@ -31,6 +31,8 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerDoor(ModBlocks.SLIMIUM_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.SLIMIUM_TRAP_DOOR);
+
+        blockStateModelGenerator.registerSimpleState(ModBlocks.PUTREFIER);
     }
 
     @Override
