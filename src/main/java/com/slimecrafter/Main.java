@@ -32,7 +32,7 @@ public class Main implements ModInitializer {
 
 		ModBlocks.registerModBlocks();
 		ModBlockEntities.registerBlocks();
-		ModScreenHandlers.RegisterScreenHandlers();
+		ModScreenHandlers.registerScreenHandlers();
 
 		//Generation
 		ModWorldGeneration.generateModWorldGen();
