@@ -153,7 +153,7 @@ public class PutrefierBlockEntity extends BlockEntity implements ExtendedScreenH
     }
 
     private boolean canInputAmountIntoOutputSlot(ItemStack result) {
-        return this.getStack(OUTPUT_SLOT).getCount() + result.getCount() < getStack(OUTPUT_SLOT).getMaxCount();
+        return this.getStack(OUTPUT_SLOT).getCount() + result.getCount() <= getStack(OUTPUT_SLOT).getMaxCount();
     }
 
     private boolean isOutPutSlotEmptyOrRecievable() {

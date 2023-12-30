@@ -34,7 +34,7 @@ public class PutrefierScreen extends HandledScreen<PutrefierScreenHandler>{
 
     private void renderProgressArrow(DrawContext context, int x, int y) {
         if(handler.isCrafting()){
-            context.drawTexture(TEXTURE, x+80, y+41, 176, 14, handler.getScaledProgress(), 17);
+            context.drawTexture(TEXTURE, x+80, y+35, 176, 14, handler.getScaledProgress(), 17);
         }
     }
 
